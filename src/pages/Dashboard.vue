@@ -6,15 +6,19 @@
           <template slot="header">
             <div class="row">
               <div class="col-sm-6" :class="isRTL ? 'text-right' : 'text-left'">
+                <!-- 如果不是RTL，则显示英文标题 -->
                 <template v-if="!isRTL">
                   <h5 class="card-category">Total Shipments</h5>
                 </template>
+                <!-- 如果是RTL，则显示阿拉伯文标题 -->
                 <template v-else>
                   <h5 class="card-category">مجموع الشحنات</h5>
                 </template>
+                <!-- 如果不是RTL，则显示英文标题 -->
                 <template v-if="!isRTL">
                   <h2 class="card-title">Performance</h2>
                 </template>
+                <!-- 如果是RTL，则显示阿拉伯文标题 -->
                 <template v-else>
                   <h2 class="card-title">أداء</h2>
                 </template>
@@ -25,6 +29,7 @@
                   data-toggle="buttons"
                   :class="isRTL ? 'float-left' : 'float-right'"
                 >
+                  <!-- 如果不是RTL，则显示英文选项 -->
                   <template v-if="!isRTL">
                     <label
                       v-for="(option, index) in bigLineChartCategories"
@@ -43,6 +48,7 @@
                       {{ option }}
                     </label>
                   </template>
+                  <!-- 如果是RTL，则显示阿拉伯文选项 -->
                   <template v-else>
                     <label
                       v-for="(option, index) in bigLineChartCategoriesAr"
@@ -139,12 +145,15 @@
       <div class="col-lg-6 col-md-12">
         <card type="tasks">
           <template slot="header">
+            <!-- 如果不是RTL，则显示英文标题 -->
             <template v-if="!isRTL">
               <h6 class="title d-inline">Tasks(5)</h6>
             </template>
+            <!-- 如果是RTL，则显示阿拉伯文标题 -->
             <template v-else>
               <h6 class="title d-inline">الشحنات</h6>
             </template>
+            <!-- 如果不是RTL，则显示英文标题 -->
             <template v-if="!isRTL">
               <p class="card-category d-inline">Today</p>
             </template>
@@ -172,6 +181,7 @@
       <div class="col-lg-6 col-md-12">
         <card class="card">
           <h4 slot="header" class="card-title">
+            <!-- 如果不是RTL，则显示英文标题 -->
             <template v-if="!isRTL"> Simple Table </template>
             <template v-else> جدول بسيط </template>
           </h4>

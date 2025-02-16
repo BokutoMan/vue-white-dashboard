@@ -11,10 +11,6 @@
         <template v-if="!isRTL">
           <p>Dashboard</p>
         </template>
-
-        <template v-else>
-          <p>لوحة القيادة</p>
-        </template>
       </sidebar-link>
 
       <sidebar-link to="/icons">
@@ -23,21 +19,13 @@
         <template v-if="!isRTL">
           <p>Icons</p>
         </template>
-
-        <template v-else>
-          <p>الرموز</p>
-        </template>
       </sidebar-link>
 
-      <sidebar-link to="/maps">
+      <sidebar-link to="/tasks">
         <i class="tim-icons icon-pin"></i>
 
         <template v-if="!isRTL">
-          <p>Maps</p>
-        </template>
-
-        <template v-else>
-          <p>خرائط</p>
+          <p>Tasks</p>
         </template>
       </sidebar-link>
 
@@ -47,10 +35,6 @@
         <template v-if="!isRTL">
           <p>Notifications</p>
         </template>
-
-        <template v-else>
-          <p>إخطارات</p>
-        </template>
       </sidebar-link>
 
       <sidebar-link to="/user">
@@ -58,10 +42,6 @@
 
         <template v-if="!isRTL">
           <p>User Profile</p>
-        </template>
-
-        <template v-else>
-          <p>ملف تعريفي للمستخدم</p>
         </template>
       </sidebar-link>
 
@@ -71,10 +51,6 @@
         <template v-if="!isRTL">
           <p>Table List</p>
         </template>
-
-        <template v-else>
-          <p>قائمة الجدول</p>
-        </template>
       </sidebar-link>
 
       <sidebar-link to="/typography">
@@ -82,10 +58,6 @@
 
         <template v-if="!isRTL">
           <p>Typography</p>
-        </template>
-
-        <template v-else>
-          <p>طباعة</p>
         </template>
       </sidebar-link>
 
@@ -95,10 +67,6 @@
         <template v-if="!isRTL">
           <p>RTL Support</p>
         </template>
-
-        <template v-else>
-          <p>دعم RTL</p>
-        </template>
       </sidebar-link>
 
       <sidebar-link to="/upgradeToPro" class="active-pro">
@@ -107,20 +75,17 @@
         <template v-if="!isRTL">
           <p>Upgrade to PRO</p>
         </template>
-
-        <template v-else>
-          <p>التطور للاحترافية</p>
-        </template>
       </sidebar-link>
     </side-bar>
 
-    <sidebar-share :background-color.sync="backgroundColor"></sidebar-share>
-
     <div class="main-panel" :data="backgroundColor">
+      <!-- 导航栏组件，用于显示在页面的顶部 -->
       <top-navbar></top-navbar>
 
+      <!-- 仪表盘的主要内容区域 -->
       <dashboard-content @click.native="toggleSidebar"></dashboard-content>
 
+      <!-- 页脚组件，显示在页面的底部 -->
       <content-footer></content-footer>
     </div>
   </div>
@@ -132,7 +97,6 @@
 import TopNavbar from "./TopNavbar.vue";
 import ContentFooter from "./ContentFooter.vue";
 import DashboardContent from "./DashboardContent.vue";
-import SidebarShare from "./SidebarSharePlugin.vue";
 import MobileMenu from "./MobileMenu.vue";
 import SideBar from "@/components/SidebarPlugin/SideBar.vue";
 import SidebarLink from "@/components/SidebarPlugin/SidebarLink.vue";
@@ -146,7 +110,6 @@ export default {
     MobileMenu,
     SideBar,
     SidebarLink,
-    SidebarShare,
   },
   data() {
     return {

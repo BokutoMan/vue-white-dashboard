@@ -1,0 +1,125 @@
+{
+    "dashboard": {
+      "completedTasks": "已完成任务",
+      "dailySales": "每日销售",
+      "performance": "性能",
+      "simpleTable": "简单表格",
+      "totalShipments": "总发货量",
+      "chartCategories": [
+        "账户",
+        "采购",
+        "会话"
+      ],
+      "tasks": "任务({count})",
+      "today": "今天",
+      "dropdown": {
+        "action": "操作",
+        "anotherAction": "另一个操作",
+        "somethingElse": "其他操作"
+      },
+      "usersTable": {
+        "title": "简单表格",
+        "columns": [
+          "姓名",
+          "国家",
+          "城市",
+          "薪资"
+        ],
+        "data": [
+          {
+            "id": 1,
+            "name": "Dakota Rice",
+            "salary": "36,738元",
+            "country": "尼日尔",
+            "city": "Oud-Turnhout"
+          },
+          {
+            "id": 2,
+            "name": "Minerva Hooper",
+            "salary": "23,789元",
+            "country": "库拉索岛",
+            "city": "Sinaai-Waas"
+          },
+          {
+            "id": 3,
+            "name": "Sage Rodriguez",
+            "salary": "56,142元",
+            "country": "荷兰",
+            "city": "Baileux"
+          },
+          {
+            "id": 4,
+            "name": "Philip Chaney",
+            "salary": "38,735元",
+            "country": "韩国",
+            "city": "Overland Park"
+          },
+          {
+            "id": 5,
+            "name": "Doris Greene",
+            "salary": "63,542元",
+            "country": "马拉维",
+            "city": "Feldkirchen in Kärnten"
+          },
+          {
+            "id": 6,
+            "name": "Mason Porter",
+            "salary": "98,615元",
+            "country": "智利",
+            "city": "格洛斯特"
+          },
+          {
+            "id": 7,
+            "name": "Jon Porter",
+            "salary": "78,615元",
+            "country": "葡萄牙",
+            "city": "格洛斯特"
+          }
+        ]
+      },
+      "taskList": [
+        {
+          "title": "更新文档",
+          "description": "Dwuamish Head, Seattle, WA 8:47 AM",
+          "done": false
+        },
+        {
+          "title": "GDPR 合规",
+          "description": "GDPR 是一项法规，要求企业在欧盟成员国进行的交易中保护欧洲公民的个人数据和隐私。",
+          "done": true
+        },
+        {
+          "title": "解决问题",
+          "description": "百分之五十的受访者表示，他们更有可能在一家公司购物",
+          "done": false
+        },
+        {
+          "title": "发布 v2.0.0",
+          "description": "Ra Ave SW, Seattle, WA 98116, SUA 11:19 AM",
+          "done": false
+        },
+        {
+          "title": "导出处理过的文件",
+          "description": "报告还显示，一旦发生泄露个人数据的事件，消费者不会轻易原谅一家公司。",
+          "done": false
+        },
+        {
+          "title": "到达导出流程",
+          "description": "Capitol Hill, Seattle, WA 12:34 AM",
+          "done": false
+        }
+      ]
+    },
+    "sidebar": {
+      "title": "创意时代",
+      "shortTitle": "CT",
+      "dashboard": "仪表盘",
+      "icons": "图标",
+      "maps": "地图",
+      "notifications": "通知",
+      "userProfile": "用户资料",
+      "tableList": "表格列表",
+      "typography": "排版",
+      "rtlSupport": "从右到左语言支持"
+    }
+  }
